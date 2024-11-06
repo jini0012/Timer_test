@@ -91,6 +91,10 @@ hr {
     text-align: center;
 }
 
+input:focus {
+    outline: none;
+}
+
 .time li:nth-of-type(2):before,
 .time li:nth-of-type(3):before {
     content: url('./img/dot.png');
