@@ -19,7 +19,7 @@ buttons.forEach((button) => {
                 clearInterval(time);
             }
             const time = setInterval(() => {
-                hour.value -= 1;
+                sec.value -= 1;
             }, 1000);
         } else if (name.textContent === 'RESET') {
         } else if (name.textContent === 'PAUSE') {
