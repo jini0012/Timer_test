@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+}
+* {
+    font-family: 'Pretendard-Bold';
+}
+
+body {
+    background: rgb(240, 244, 255);
+    background: radial-gradient(circle, rgba(240, 244, 255, 1) 0%, rgba(165, 182, 238, 1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 7.2rem 0 6rem 0;
+    width: 24.4rem;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background: rgb(85, 114, 187);
+    background: linear-gradient(90deg, rgba(85, 114, 187, 1) 0%, rgba(55, 75, 124, 1) 100%);
+
+    width: 40rem;
+    height: 36rem;
+    border-radius: 1.6rem;
+    box-sizing: border-box;
+    padding: 4rem;
+
+    box-shadow: 2rem 2em 6rem 1rem #374b7c66;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 2.88rem;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+hr {
+    margin: 2.3rem 0 3.2rem 0;
+    border-color: #3d538a;
+    box-shadow: 0 0.1rem 0 0 #5b75b4;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #a5b6ee;
+
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+}
+
+.time input {
+    margin-top: 0.4rem;
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    line-height: 4.801rem;
+    color: #fff;
+
+    background: rgb(76, 101, 160);
+    background: linear-gradient(90deg, rgba(76, 101, 160, 1) 0%, rgba(48, 69, 119, 1) 100%);
+    border: 0.1rem #354971 solid;
+    border-radius: 0.4rem;
+
+    text-align: center;
+}
+
+.time li:nth-of-type(2):before,
+.time li:nth-of-type(3):before {
+    content: url('./img/dot.png');
+    display: inline-block;
+    width: 0.6rem;
+    height: 2.6rem;
+
+    position: absolute;
+    top: 17.8rem;
+}
+
+.time li:nth-of-type(2):before {
+    left: 14.6rem;
+}
+
+.time li:nth-of-type(3):before {
+    right: 14.6rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.buttons button {
+    width: 11.2rem;
+    height: 4.8rem;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+}
+
+button::before {
+    position: relative;
+    top: 0.25rem;
+    left: -0.5rem;
+}
+
+.buttons .start {
+    background-color: #5180ff;
+}
+
+.buttons .start::before {
+    content: url('./img/icon-start.svg');
+}
+
+.buttons .pause {
+    background-color: #15c2b8;
+}
+
+.buttons .pause::before {
+    content: url('./img/icon-stop.svg');
+}
+
+.buttons .reset {
+    background-color: #fb7099;
+}
+
+.buttons .reset::before {
+    content: url('./img/icon-reset.svg');
+}
+
+.buttons button:disabled {
+    background-color: #324577;
+    color: #617199;
+}
+
+.buttons .start:disabled::before {
+    content: url('./img/icon-start-disabled.svg');
+}
+
+.buttons .reset:disabled::before {
+    content: url('./img/icon-reset-disabled.svg');
+}
+
+footer {
+    font-family: 'Pretendard-Regular';
+    margin-top: 6rem;
+    color: #8596bf;
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+}
